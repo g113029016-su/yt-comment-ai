@@ -1,0 +1,23 @@
+# --- Python 暫存檔 ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# --- 虛擬環境 (絕對不要傳，別人的電腦要自己裝) ---
+venv/
+env/
+.env
+
+# --- 資料檔案 (分析產生的 CSV 不建議上傳) ---
+*.csv
+!ntusd_positive.txt # 使用驚嘆號表示「排除例外」，保留你的字典檔
+!ntusd_negative.txt
+
+# --- 編輯器設定 ---
+.vscode/
+.idea/
+.DS_Store
+
+# --- Streamlit 暫存 ---
+.streamlit/

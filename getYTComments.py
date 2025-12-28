@@ -2,8 +2,8 @@ import csv
 import googleapiclient.discovery
 import os
 import time
-
-API_KEY = "YOUR_API_KEY_HERE"
+import streamlit as st
+API_KEY = st.secrets["YOUTUBE_API_KEY"]
 
 def get_all_comments(video_id):
     youtube = googleapiclient.discovery.build(

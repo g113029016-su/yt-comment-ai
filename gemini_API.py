@@ -1,9 +1,10 @@
 import pandas as pd
 from google import genai
 import time
+import streamlit as st
 
 # --- 設定 ---
-GEMINI_API_KEY = "YOUR_API_KEY_HERE"
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 BATCH_SIZE = 50  # 每 50 條留言分析一次，避免單次 Token 太大
 DELAY_SECONDS = 15 # 每批次間隔 15 秒，確保 RPM 不會超標
 
